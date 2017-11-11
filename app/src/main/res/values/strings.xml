@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">Guess</string>
     <string name="secret">Secret Number:</string>
-    <string name="guess">Guess the Number(1~10)</string>
+    <string name="guess">Guess the Secret Number(1~10)</string>
     <string name="bigger">Bigger</string>
     <string name="smaller">Smaller</string>
     <string name="bingo">Bingo</string>
-    <string name="wrong">Wrong</string>
+    <string name="wrong">Guess the Number 1~10</string>
     <string name="send">Send</string>
     <string name="message">Message:</string>
 </resources>
