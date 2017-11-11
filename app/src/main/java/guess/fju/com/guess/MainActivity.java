@@ -28,12 +28,22 @@ public class MainActivity extends AppCompatActivity {
         TextView m = (TextView)findViewById(R.id.txt_message);
         if(n>10 || n<1){
             m.setText(R.string.wrong);
+            new AlertDialog.Builder(this)
+                    .setMessage(R.string.wrong)
+                    .setPositiveButton("OK", null)
+                    .show();
         }else if(n<r){
             m.setText(R.string.bigger);
+            Toast.makeText(this, R.string.bigger, Toast.LENGTH_LONG).show();
         }else if(n>r){
             m.setText(R.string.smaller);
+            Toast.makeText(this, R.string.smaller, Toast.LENGTH_LONG).show();
         }else{
             m.setText(R.string.bingo);
+            new AlertDialog.Builder(this)
+                    .setMessage(R.string.bingo)
+                    .setPositiveButton("OK", null)
+                    .show();
         }
     }
 
